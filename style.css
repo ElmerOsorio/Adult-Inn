@@ -1,0 +1,32 @@
+body{
+    margin: 0;
+    padding: 0;
+    background: #F4F2F2;
+}
+.container{
+    display: grid;
+    grid-template-columns: repeat(12 / 1fr);
+    grid-gap: 16px;
+    grid-auto-rows: minmax(100px, auto);
+    max-width: 962px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.anuncio-ppal{
+    background: black;
+    grid-column: 2 / 11;
+    grid-row: 1;
+    background: linear-gradient(100.07deg, #4F6DB3 6.04%, #CA82E0 107.56%);
+}
+.destacado{
+    background: white;
+    grid-column: 1 / 9;
+    grid-row: 2 / 7;
+    stroke-width: 4px;
+    stroke: linear-gradient (#CA82E0 @ 0%, rgba(202, 130, 224, 0) @ 27.59%, rgba(92, 196, 234, 0) @ 73.96%, #5CC4EA @ 100%);
+}
+.tendencias{
+    background: white;
+    grid-column: 9 / 12;
+    grid-row: 2 / 7;
+}
