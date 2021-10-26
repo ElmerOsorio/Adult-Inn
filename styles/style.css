@@ -261,6 +261,12 @@ nav ul li{
 .square-ad{
     padding-top: 16px;
 }
+
+/* Segunda Seccion */
+.seccion-dos{
+    display: flex;
+    flex-direction: row;
+}
 .eight-col{
     background: white;
     grid-column: 1 / 9;
@@ -271,6 +277,30 @@ nav ul li{
 .img-left{
     padding-right: 16px;
 }
+
+.cards{
+    grid-column: 9 / 13;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.mini-card{
+    display: flex;
+    flex-direction: row;
+    background: white;
+    padding: 16px;
+}
+.cards p{
+    font-size: 14px;
+    margin: 0;
+}
+.cards img{
+    margin-right: 16px;
+}
+.cards h4{
+    margin: 0;
+}
+
 /* Footer */
 footer{
     background: #4F6DB3;
