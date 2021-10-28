@@ -2,6 +2,7 @@ body{
     margin: 0;
     padding: 0;
     background: #F4F2F2;
+    color: #4F5561;
     font-family: 'Poppins', sans-serif;
 }
 header{
@@ -10,30 +11,40 @@ header{
     background: white;
     box-shadow: 0px 0px 16px rgba(79, 109, 179, 0.2);
 }
+h1{
+    font-family: 'Fjalla One', sans-serif;
+    font-size: 4.75em;
+}
 h2{
     font-family: 'Fjalla One', sans-serif;
-    font-size: 2.5em;
-    text-transform: uppercase;
-	background: linear-gradient(to right, #4F6DB3 0%, #CA82E0 100%);
-	-webkit-background-clip: text;
-	-webkit-text-fill-color: transparent;
-    margin: 0.5em 0;
+    font-size: 2.875em;
+    margin: 0;
 }
 h3{
-    font-family: 'Poppins', sans-serif;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 18px;
-    line-height: 30px;
+    font-family: 'Fjalla One', sans-serif;
+    font-size: 2.375em;
+    margin: 0;
 }
 h4{
-    font-family: 'Poppins', sans-serif;
-    margin: 8px 0 0 0;
-    color: #CA82E0;
+    font-family: 'Fjalla One', sans-serif;
+    font-size: 1.6875em;
+    margin: 0;
+}
+h5{
+    font-family: 'Fjalla One', sans-serif;
+    font-size: 1.1875em;
+    margin: 0;
+    color: #8E4E99;
+    letter-spacing: 1.5px;
+}
+h6{
+    font-family: 'Fjalla One', sans-serif;
+    font-size: 1em;
+    margin: 0;
 }
 p{
     font-family: 'Poppins', sans-serif;
-    color: #353535;
+    font-size: 0.9375em;
 }
 ul{
     margin: 0;
@@ -57,7 +68,8 @@ header{
     border-bottom: 1px solid #d5d5d5;
 }
 .logo{
-    margin: auto;
+    margin-left: 45%;
+    margin-right: auto;
 }
 ul{
     list-style-type: none;
@@ -71,8 +83,8 @@ ul{
 .user-btns ul li a{
     background: #353535;
     color: white;
-    width: 44px;
     height: 64px;
+    padding: 0 16px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -129,9 +141,7 @@ nav ul li{
 .anuncio-ppal{
     width: 728px;
     height: 90px;
-    background: #343a40;
     margin: 130px auto 20px auto;
-    color: #e83e8c;
 }
 .container{
     display: grid;
@@ -151,6 +161,12 @@ nav ul li{
     border-image: linear-gradient(180deg, #CA82E0, white, #5CC4EA) 1;
     box-shadow: 0px 0px 16px rgba(79, 109, 179, 0.2);
     transition-duration: 500ms;
+}
+.destacado h2{
+    background: linear-gradient(to right, #4F6DB3 0%, #CA82E0 100%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+    margin-bottom: 16px;
 }
 .destacado:hover{
     border-image: linear-gradient(180deg, #5CC4EA, white, #CA82E0) 1;
@@ -173,7 +189,7 @@ nav ul li{
     border: none;
 }
 .titulo-nota{
-    padding: 0 20px;
+    padding: 16px;
     color: fff;
 }
 .info-redactor{
@@ -195,7 +211,7 @@ nav ul li{
 .info-date{
     color: #4F6DB3;
 }
-/* Tndencias */
+/* Tendencias */
 .tendencias{
     background: white;
     grid-column: 10 / 13;
@@ -247,13 +263,12 @@ nav ul li{
     background-color: #CA82E0;
     color: white;
 }
+
 /* Noticias derecha */
-.noti-bar{
-    padding-top: 16px;
-}
 .noti-img{
     width: 100%;
     height: auto;
+    padding: 16px 0 8px 0;
 }
 .noti-bar p{
     margin: 0;
@@ -284,21 +299,74 @@ nav ul li{
     flex-direction: column;
     justify-content: space-between;
 }
+.cards p{
+    margin: 0;
+}
 .mini-card{
     display: flex;
     flex-direction: row;
     background: white;
     padding: 16px;
 }
-.cards p{
-    font-size: 14px;
-    margin: 0;
+#minidos {
+    margin-top: 16px;
 }
 .cards img{
     margin-right: 16px;
 }
-.cards h4{
+
+/* Tercera Seccion*/
+
+.sponsor {
+    grid-column: 1 / 5;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.sponsor img{
+    width: 100%;
+    padding-bottom: 16px;
+}
+.desarrollo-personal{
+    background: white;
+    border-top: 4px solid;
+    border-image: linear-gradient(90deg, #CA82E0, #5CC4EA) 1;
+    padding: 16px;
+}
+.noti-img{
     margin: 0;
+    padding: 0;
+}
+.entretenimiento{
+    background: white;
+    grid-column: 5 / 9;
+    padding: 1em;
+    display: flex;
+    flex-direction: column;       
+}
+.img-left{
+    margin-bottom: 16px;
+}
+.most-read{
+    grid-column: 9 / 13;
+    background: white;
+    display:flex;
+    flex-direction:column;
+    padding: 0 16px;
+    border-top: 4px solid;
+    border-image: linear-gradient(90deg, #CA82E0, #5CC4EA) 1;
+}
+.most-read h2{
+    margin: 16px 0 32px 0;
+}
+
+.most-read-card{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 16px;
+}
+.most-read-topic{
+    margin-left: 16px;
 }
 
 /* Footer */
@@ -311,10 +379,13 @@ footer{
     align-items: center;
     justify-content: space-between;
     margin-top: 16px;
-    padding: 0 160px;
+    padding: 0 16px;
 }
 footer p{
     color: white;
+}
+footer a{
+    font-size: 12px;
 }
 .footer-btn{
     color: white;
