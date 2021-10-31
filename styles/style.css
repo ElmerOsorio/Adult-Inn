@@ -278,10 +278,6 @@ nav ul li{
 }
 
 /* Segunda Seccion */
-.seccion-dos{
-    display: flex;
-    flex-direction: row;
-}
 .eight-col{
     background: white;
     grid-column: 1 / 9;
@@ -289,10 +285,9 @@ nav ul li{
     display: flex;
     flex-direction: row;
 }
-.img-left{
-    padding-right: 16px;
+.img-izq{
+    margin-right: 16px;
 }
-
 .cards{
     grid-column: 9 / 13;
     display: flex;
@@ -307,9 +302,6 @@ nav ul li{
     flex-direction: row;
     background: white;
     padding: 16px;
-}
-#minidos {
-    margin-top: 16px;
 }
 .cards img{
     margin-right: 16px;
@@ -333,8 +325,8 @@ nav ul li{
     border-image: linear-gradient(90deg, #CA82E0, #5CC4EA) 1;
     padding: 16px;
 }
-.noti-img{
-    margin: 0;
+.desarrollo-personal img{
+    margin: 0 0 16px 0;
     padding: 0;
 }
 .entretenimiento{
