@@ -346,51 +346,6 @@ nav ul li{
 .img-left{
     margin-bottom: 16px;
 }
-
-/* Noticias carrousel*/
-.container-carrousel{
-    grid-column: 1 / 13;
-    border-image: linear-gradient(180deg, #CA82E0, white, #5CC4EA) 1;
-    background: linear-gradient(100deg, #4F6DB3 6%, #CA82E0 105%);
-    grid-template-columns: repeat(12, 1fr);
-    grid-gap: 16px;
-    height: 443px;
-    padding: 16px;  
-}
-
-.container-carrousel-finanzas{
-    background: linear-gradient(100deg, #CA82E0 6%, #5CC4EA 105%);
-    grid-column: 1 / 13;
-    grid-template-columns: repeat(12, 1fr);
-    grid-gap: 16px;
-    height: 443px;
-    padding: 16px;  
-}
-
-.title_carrousel {
-    font-family: 'Fjalla One', sans-serif;
-    font-size: 2.5em;
-    text-transform: uppercase;
-    height: 30px;
-    margin: 0.5em 0;
-    padding-bottom: 0.5em;
-    display: flex;
-    -webkit-text-fill-color: white;
-}
-.notas{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    
-}
-.nota-carrousel{
-    background-color: white;
-    height: 320px;
-    grid-column: 1 / 5;
-    padding: 16px;
-    border-top: 4px solid #CA82E0;
-    box-shadow: 0px 0px 16px rgba(79, 109, 179, 0.2);
-}
 .most-read{
     grid-column: 9 / 13;
     background: white;
@@ -403,7 +358,6 @@ nav ul li{
 .most-read h2{
     margin: 16px 0 32px 0;
 }
-
 .most-read-card{
     display: flex;
     flex-direction: row;
@@ -412,6 +366,54 @@ nav ul li{
 .most-read-topic{
     margin-left: 16px;
 }
+
+/* Noticias carrousel*/
+.container-carrousel{
+    grid-column: 1 / 13;
+    background: linear-gradient(100deg, #4F6DB3 6%, #CA82E0 105%);
+    padding: 16px;
+}
+
+.container-carrousel-finanzas{
+    background: linear-gradient(100deg, #CA82E0 6%, #5CC4EA 105%);
+    grid-column: 1 / 13;
+    padding: 16px;  
+}
+
+.title_carrousel {
+    font-family: 'Fjalla One', sans-serif;
+    font-size: 2.5em;
+    text-transform: uppercase;
+    margin: 0.5em 0;
+    padding-bottom: 0.5em;
+    color: white;
+}
+.notas{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;   
+}
+.nota-carrousel{
+    background-color: white;
+    padding: 16px;
+    margin-right: 16px;
+    border-top: 4px solid #CA82E0;
+    box-shadow: 0px 0px 16px rgba(79, 109, 179, 0.2);
+}
+
+.nota-carrousel-der{
+    background-color: white;
+    padding: 16px;
+    border-top: 4px solid #CA82E0;
+    box-shadow: 0px 0px 16px rgba(79, 109, 179, 0.2);
+}
+.notas img{
+    width: 100%;
+    height: auto;
+    margin-bottom: 8px;
+}
+
+
 
 /* Footer */
 footer{

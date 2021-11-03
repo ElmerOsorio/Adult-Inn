@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+    <div class="logo-form">
+        <img src="img/adultinn_logo.png" alt="">
+    </div>
+    <div class="descripcion">
+        <h2>Detalles de pago</h2>
+        <p>Lo puedes cancelar en el momento que decidas</p>
+    </div>
+    <form action="">
+        <div class="form-group">
+            <label>
+                <input
+                  name="user-recommend"
+                  value="definitely"
+                  type="radio"
+                  class="input-radio"
+                  checked
+                />Tarjeta de Crédito/Débito
+            </label>
+            <label>
+                <input
+                  name="user-recommend"
+                  value="maybe"
+                  type="radio"
+                  class="input-radio"
+                />Paypal
+            </label>
+          </div>
+          <div class="form-group">
+            <label id="number-label" for="number"
+              >Número de tarjeta de Crédito o Débito<span class="clue"></span>
+            </label>
+            <input
+              type="text"
+              name="card-number"
+              id="number"
+              class="form-control"
+              placeholder="Número de tarjeta de Crédito o Débito"
+            />
+          </div>
+          <div class="form-group">
+            <div class="mes">
+                <p>Mes de Expiración</p>
+                <select id="dropdown" name="role" class="form-control" required>
+                <option disabled selected value>Selecciona el mes</option>
+                <option value="Ene">01</option>
+                <option value="Feb">02</option>
+                <option value="Mar">03</option>
+                <option value="Apr">04</option>
+                <option value="May">05</option>
+                <option value="Jun">06</option>
+                <option value="Jul">07</option>
+                <option value="Aug">08</option>
+                <option value="Sep">09</option>
+                <option value="Oct">10</option>
+                <option value="Nov">11</option>
+                <option value="Dic">12</option>
+                </select>
+            </div>
+            <div class="ano">
+                <p>Año de Expiración</p>
+                <select id="dropdown" name="role" class="form-control" required>
+                <option disabled selected value>Selecciona el año</option>
+                <option value="2022">22</option>
+                <option value="2023">23</option>
+                <option value="2024">24</option>
+                <option value="2025">25</option>
+                </select>
+            </div>
+            <div class="ccv">
+                <label id="number-label" for="number"
+              >CVV<span class="clue"></span>
+            </label>
+            <input
+              type="text"
+              name="CVV"
+              id="number"
+              class="form-control"
+              placeholder="CVV"
+            />
+            </div>
+          </div>
+          <div class="form-group">
+            <button type="submit" id="submit" class="submit-button">
+              Submit
+            </button>
+          </div>
+    </form>
+    <footer>
+        <div class="logo-footer">
+            <img src="img/LogoWhite.png" alt="Adult_Inn_Logo_White">
+        </div>
+        <div class="mapsite">
+            <ul>
+                <li>
+                        <a class="footer-btn" href="">Finanzas</a>
+                        <a class="footer-btn" href="">Desarollo Personal</a>
+                        <a class="footer-btn" href="">Social</a>
+                        <a class="footer-btn" href="">Entretenimiento</a>
+                        <a class="footer-btn" href="">Vigila a tu político</a>
+                        <a class="footer-btnend" href="">Herramientas</a>
+                </li>
+            </ul>
+        </div>
+        <div class="socialmedia">
+            <div>
+                <p>Sigue a Adult Inn</p>
+            </div>
+            <div class="icons">
+                <ul>
+                    <li>
+                        <a  href="#" target="_blank"><img src="img/facebook.png" alt=""></a>
+                        <a  href="#" target="_blank"><img src="img/instagram.png" alt=""></a>
+                        <a  href="#" target="_blank"><img src="img/linkedin.png" alt=""></a>
+                        <a  href="#" target="_blank"><img src="img/youtube.png" alt=""></a>
+                        <a  href="#" target="_blank"><img src="img/twitter.png" alt=""></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
