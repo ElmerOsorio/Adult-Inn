@@ -1,10 +1,19 @@
 body{
     margin: 0;
     padding: 0;
-    background: linear-gradient(40deg, #4F6DB3 6%, #CA82E0 105%);
+    background: white;
     font-family: 'Poppins', sans-serif;
+    background-image: url("bgplanes.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
-
+.contenedor-ppal{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
 h2{
     font-family: 'Fjalla One', sans-serif;
     font-size: 2em;
@@ -35,12 +44,16 @@ p{
 a{
     text-decoration: none;
 }
-
+li{
+    list-style: none;
+}
 i{ 
     color: #8D9CBE;
     font-size: smaller;
 }
-
+.logo{
+    margin: 72px 0 0 15%;
+}
 .beneficios{
     color: #4F5561;
     font-size: 14px;
@@ -50,6 +63,45 @@ ul{
     margin: 16px 0 16px 0 ;
     padding: 0 0 0 30px;
 }
+
+/* Boton */
+
+.suscribete {
+    width: 240px;
+    height: 44px;
+    margin: 16px 0;
+    color: white;
+    font-family: 'Fjalla One', sans-serif;
+    font-size: 1.1875em;
+    background: linear-gradient(110deg, #CA82E0 6%, #5CC4EA 105%);
+    border-style: none;
+    transition-duration: 500ms;
+}
+
+.suscribete:hover{
+    box-shadow: 0px 0px 16px rgba(79, 109, 179, 0.2);
+    cursor: pointer;
+    transform: translate(0px, -4px);
+}
+
+.suscribete-g {
+    width: 240px;
+    height: 44px;
+    margin: 16px 0;
+    color: white;
+    font-family: 'Fjalla One', sans-serif;
+    font-size: 1.1875em;
+    background: #353535;
+    border-style: none;
+    transition-duration: 500ms;
+}
+
+.suscribete-g:hover{
+    box-shadow: 0px 0px 16px rgba(79, 109, 179, 0.2);
+    cursor: pointer;
+    transform: translate(0px, -4px);
+}
+
 
 /* Seccion Principal */
 .container{
@@ -154,6 +206,7 @@ button {
     color: white;
     margin: 16px 30px;  
 }
+
 /* Footer */
 footer{
     background: #4F6DB3;
@@ -164,10 +217,13 @@ footer{
     align-items: center;
     justify-content: space-between;
     margin-top: 16px;
-    padding: 0 160px;
+    padding: 0 16px;
 }
 footer p{
     color: white;
+}
+footer a{
+    font-size: 12px;
 }
 .footer-btn{
     color: white;
@@ -177,4 +233,9 @@ footer p{
 .footer-btnend{
     color: white;
     padding: 0 8px;    
+}
+
+/*section*/
+.story-section{
+    grid-auto-rows: max-content;
 }
