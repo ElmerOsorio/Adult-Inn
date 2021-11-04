@@ -520,3 +520,8 @@ footer a{
     color: white;
     padding: 0 8px;    
 }
+
+/*section*/
+.story-section{
+    grid-auto-rows: max-content;
+}
