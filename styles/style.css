@@ -522,6 +522,38 @@ footer a{
 }
 
 /*section*/
+.front-banner{
+    grid-column: 1 / span 12;
+    display:grid;
+}
+
+main{
+    padding-bottom:2px;
+    padding-top:2px;
+    display:flex;
+    flex-direction:column;
+}
+
 .story-section{
-    grid-auto-rows: max-content;
+    grid-column:1/ span 11;
+    margin-top:2em;
+}
+
+aside{
+    grid-column: 8 / span 4;
+    display:flex;
+    flex-direction:column;
+}
+
+.recommended{
+    grid-column: 9/ span 2;
+    background: white;
+    display: flex;
+    flex-direction: column;
+    padding-left: 28px;
+    padding-right: 28px;
+    }
+    
+body[id="story"]{
+    background: white;
 }
