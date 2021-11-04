@@ -1,0 +1,24 @@
+.contenedor{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
+.logo-form{
+    margin: 72px 0 72px 15%;
+}
+.descripcion{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    padding: 24px 0;
+}
+.form-group-tres {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}

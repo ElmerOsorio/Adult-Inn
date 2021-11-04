@@ -1,0 +1,35 @@
+body{
+    background: white;
+}
+h2{
+    background: linear-gradient(to right, #4F6DB3 0%, #CA82E0 100%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+    margin-bottom: 16px;
+}
+.container-banner{
+    display:flex;
+    flex-direction: row;
+    max-width: 962px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.invitation{
+    display:flex;
+    flex-direction: column;
+}
+.tachado{
+    text-decoration: line-through;
+}
+.logo{
+    margin: 72px 0 72px 15%;
+}
+.imagen img{
+    width: 100%;
+    height: auto;
+    margin: auto;
+}
+.suscribete {
+    width: 240px;
+    height: 44px;
+}
