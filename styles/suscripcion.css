@@ -2,6 +2,8 @@ body{
     background: white;
 }
 h2{
+    font-family: 'Fjalla One', sans-serif;
+    font-size: 3rem;
     background: linear-gradient(to right, #4F6DB3 0%, #CA82E0 100%);
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
@@ -41,12 +43,16 @@ h2{
     width: 240px;
     height: 44px;
     margin: 16px 0;
-    color: white;
+    border-radius: 0;
+    border-style: solid;
+    border-width: 2px;
+    border-image: linear-gradient(45deg, #4F6DB3, #CA82E0) 1;
+    background: #353535;
     font-family: 'Fjalla One', sans-serif;
-    font-size: 1.1875em;
-    background: linear-gradient(110deg, #CA82E0 6%, #5CC4EA 105%);
-    border-style: none;
+    font-size: 1.1rem;
+    text-transform: uppercase;
     transition-duration: 500ms;
+    color: white;
 }
 
 .suscribete:hover{
