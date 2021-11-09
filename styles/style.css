@@ -412,7 +412,16 @@ nav ul li{
     margin-bottom: 8px;
 }
 
+/* Lomasleido */
+.titulo_lomasleido {
+    font-family: 'Fjalla One', sans-serif;
+    font-size: 1.2em;
+    color: #4F5561;
+    height: 45px;
+    border-top: 4px solid linear-gradient(100.07deg, #4F6DB3 6.04%, #CA82E0 107.56%);
+    grid-column: 1 / 13;
 
+}
 
 /* Footer */
 footer{
