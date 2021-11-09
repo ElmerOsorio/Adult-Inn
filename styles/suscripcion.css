@@ -1,7 +1,15 @@
-body{
-    background: white;
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
 }
-h2{
+.contenedor-sus{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
+h2{   
     font-family: 'Fjalla One', sans-serif;
     font-size: 3rem;
     background: linear-gradient(to right, #4F6DB3 0%, #CA82E0 100%);
@@ -10,11 +18,36 @@ h2{
     margin-bottom: 16px;
     text-transform: uppercase;
 }
-.contenedor-ppal{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    height: 100%;
+h3{
+    font-family: 'Fjalla One', sans-serif;
+    font-size: 1.4rem;
+    width: auto;
+    color: white;
+    margin: 8px 0;
+    text-transform: uppercase;
+}
+h4{
+    font-family: 'Fjalla One', sans-serif;
+    font-size: 1.5rem;
+    margin: 8px 0 0 0;
+}
+p{
+    font-family: 'Poppins', sans-serif;
+    color: #353535;
+}
+
+a{
+    text-decoration: none;
+}
+li{
+    list-style: none;
+}
+i{ 
+    color: #8D9CBE;
+    font-size: smaller;
+}
+.logo{
+    margin: 72px 0 0 15%;
 }
 .container-banner{
     display:flex;
@@ -31,9 +64,7 @@ h2{
 .tachado{
     text-decoration: line-through;
 }
-.logo{
-    margin: 72px 0 0 15%;
-}
+
 .imagen img{
     width: 100%;
     height: auto;
@@ -61,3 +92,30 @@ h2{
     transform: translate(0px, -4px);
 }
 
+/* Footer */
+footer{
+    background: #4F6DB3;
+    color: white;
+    height: 110px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 16px;
+    padding: 0 16px;
+}
+footer p{
+    color: white;
+}
+footer a{
+    font-size: 12px;
+}
+.footer-btn{
+    color: white;
+    border-right: 1px solid white;
+    padding: 0 8px;
+}
+.footer-btnend{
+    color: white;
+    padding: 0 8px;    
+}
