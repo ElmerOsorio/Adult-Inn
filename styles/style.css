@@ -194,6 +194,17 @@ nav ul li{
     color: fff;
     padding: 8px 16px;
     border: none;
+    z-index: 2;
+    font-family: 'Fjalla One';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 18px;
+
+    /* identical to box height */
+    text-align: center;
+
+    color: #FFFFFF;
 }
 .titulo-nota{
     padding: 16px;
@@ -365,6 +376,13 @@ nav ul li{
 }
 .most-read-topic{
     margin-left: 16px;
+    display:flex;
+    flex-flow: column wrap;
+}
+
+.most-read-card img{
+    width: 69px;
+    height: 69px;
 }
 
 /* Noticias carrousel*/
@@ -445,9 +463,28 @@ footer a{
 
 /*section*/
 .front-banner{
+    margin-top:110px;
     grid-column: 1 / span 12;
-    display:grid;
+    display:flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    background-image: url("titular-predicciones.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 551px;
 }
+
+    .front-banner h1{
+        font-family: 'Fjalla one';
+        font-weight: normal;
+        font-size: 36px;
+        line-height: 46px;
+        text-align: center;
+        text-transform: uppercase;
+        color: #E6EDFF;
+    }
+
 
 main{
     padding-bottom:2px;
@@ -462,9 +499,10 @@ main{
 }
 
 aside{
-    grid-column: 8 / span 4;
+    column-span: 6 / span 4;
     display:flex;
     flex-direction:column;
+    align-items: center;
 }
 
 .recommended{
@@ -475,7 +513,77 @@ aside{
     padding-left: 28px;
     padding-right: 28px;
     }
+
+.head-recomendaciones{
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-left: 0px;
+    padding-right: 0px;
+    display:flex;
+    flex-direction:column; 
+    align-items: center;
+    justify-content: center;
+}
+
+.head-recomendaciones hr{
+    background: linear-gradient(104.3deg, #CA82E0 -5.38%, #5CC4EA 105.65%);
+    width: 231px;
+    height: 3px;
+}
+
+.most-read-split{
+    width: 228px;
+    height: 0px;
+    left: 824px;
+    top: 1453px;
+    border: 1px solid #E7E4E4;
+
+    }
     
 body[id="story"]{
     background: white;
+}
+
+.sponsor{
+    display: flex;
+    flex-direction: column;
+    Justify-content: center;
+    align-items: center;
+    padding: 10px;
+    height: 539px;
+    width: 231px;
+    margin-top: 32px;
+    background: linear-gradient(100.07deg, #4F6DB3 6.04%, #CA82E0 107.56%);
+    
+}
+
+.Subscription{
+    width: 140px;
+    display:flex;
+    align-items: center;
+    Justify-content: center;
+    flex-direction:column;
+    height: 36px;
+    background: #CA82E0;
+    box-shadow: 0px 0px 8px rgba(43, 1, 75, 0.25);
+    font-family: 'Poppins' ;
+    color: white ;
+    font-weight: lighter;
+    font-size: 24px;
+    line-height: 30px;
+    margin: 0;    
+}
+
+#logo-sponsor{
+    height: 45px;
+    width: auto;
+}
+
+#te-recomendamos{
+    font-family: 'Fjalla One';
+    font-size: 18px;
+    font-style: normal;
+    font-weight: normal;
+    line-height: 23px;
+    color: #4F5561;
 }
