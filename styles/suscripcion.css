@@ -1,11 +1,5 @@
-body{
-    background: white;
-}
-h2{
-    background: linear-gradient(to right, #4F6DB3 0%, #CA82E0 100%);
-	-webkit-background-clip: text;
-	-webkit-text-fill-color: transparent;
-    margin-bottom: 16px;
+.logo{
+    margin: 72px 0 0 15%;
 }
 .container-banner{
     display:flex;
@@ -17,13 +11,12 @@ h2{
 .invitation{
     display:flex;
     flex-direction: column;
+    width: 60%;
 }
 .tachado{
     text-decoration: line-through;
 }
-.logo{
-    margin: 72px 0 72px 15%;
-}
+
 .imagen img{
     width: 100%;
     height: auto;
@@ -32,4 +25,21 @@ h2{
 .suscribete {
     width: 240px;
     height: 44px;
+    margin: 16px 0;
+    border-radius: 0;
+    border-style: solid;
+    border-width: 2px;
+    border-image: linear-gradient(45deg, #4F6DB3, #CA82E0) 1;
+    background: #353535;
+    font-family: 'Fjalla One', sans-serif;
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    transition-duration: 500ms;
+    color: white;
+}
+
+.suscribete:hover{
+    box-shadow: 0px 0px 16px rgba(79, 109, 179, 0.2);
+    cursor: pointer;
+    transform: translate(0px, -4px);
 }
