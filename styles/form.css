@@ -145,3 +145,41 @@ footer a{
     color: white;
     padding: 0 8px;    
 }
+
+/* Responsive */
+@media (max-width: 768px){
+    .metodo-pago{
+        flex-direction: column;
+    }
+    .active-btn{
+        margin-bottom: 16px;
+    }
+    form{
+        width: 98%;
+    }
+    label{
+        font-size: 0.8rem;
+        padding-left: 0;
+    }
+    .card-detail{
+        width: 112px;
+    }
+    #card-nmbr{
+        width: 100%;
+    }
+    footer{
+        flex-direction: column;
+        text-align: center;
+        height: auto;
+        padding: 16px;
+    }
+    .logo-footer{
+        padding-bottom: 16px;
+    }
+    .mapsite{
+        padding-bottom: 16px;
+    }
+    .icons img{
+        width: 16px;
+    }
+}

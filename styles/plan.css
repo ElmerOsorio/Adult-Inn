@@ -190,3 +190,33 @@ footer a{
 .story-section{
     grid-auto-rows: max-content;
 }
+
+/* Responsive */
+
+@media (max-width: 768px){
+    h2{
+        display: none;
+    }
+    .planes{
+        flex-direction: column;
+        margin: 32px 0;
+    }
+    .plan-fav{
+        margin: 42px 0;
+    }
+    footer{
+        flex-direction: column;
+        text-align: center;
+        height: auto;
+        padding: 16px;
+    }
+    .logo-footer{
+        padding-bottom: 16px;
+    }
+    .mapsite{
+        padding-bottom: 16px;
+    }
+    .icons img{
+        width: 16px;
+    }
+}
