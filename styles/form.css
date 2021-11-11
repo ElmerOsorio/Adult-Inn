@@ -155,14 +155,14 @@ footer a{
         margin-bottom: 16px;
     }
     form{
-        width: 98%;
+        width: 90%;
     }
     label{
         font-size: 0.8rem;
         padding-left: 0;
     }
     .card-detail{
-        width: 112px;
+        width: 100px;
     }
     #card-nmbr{
         width: 100%;
@@ -181,5 +181,11 @@ footer a{
     }
     .icons img{
         width: 16px;
+    }
+    button{
+        width: 100%;
+    }
+    .submit-btn{
+        width: 100%;
     }
 }
