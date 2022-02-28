@@ -59,6 +59,24 @@ a{
     font-family:'Poppins', sans-serif;
     text-decoration: none;
 }
+a p:hover{
+    text-decoration: underline;
+}
+a h4{
+    color: #353535;
+}
+a h4:hover{
+    text-decoration: underline;
+}
+a h6{
+    color: #353535;
+}
+a h6:hover{
+    text-decoration: underline;
+}
+.tittle-link:hover{
+    text-decoration: underline;
+}
 /* Nav Bar */
 header{
     position: fixed;
@@ -119,30 +137,37 @@ nav ul li{
     display: flex;
     justify-content: center;
     align-items: center;
-    color: #4F5561;
+    color: #353535;
     border-right: 1px solid #d5d5d5;
     height: 44px;
     padding: 0 20px;
     margin: 0;
+    border-bottom: 4px solid white;
     transition-duration: 500ms;
 }
 .nav-btn:hover{
-    background: #4F5561;
+    background: #353535;
     color: white;
+    border-bottom: 4px solid #353535;
 }
 .nav-btnend{
     display: flex;
     justify-content: center;
     align-items: center;
-    color: #4F5561;
+    color: #353535;
     height: 44px;
     padding: 0 20px;
     margin: 0;
+    border-bottom: 4px solid white;
     transition-duration: 500ms;
 }
 .nav-btnend:hover{
-    background: #4F5561;
+    background: #353535;
     color: white;    
+    border-bottom: 4px solid #353535;
+}
+#nav-active{
+    border-bottom: 4px solid #CA82E0;
 }
 /* Seccion Principal */
 .anuncio-ppal{
@@ -174,11 +199,16 @@ nav ul li{
 	-webkit-text-fill-color: transparent;
     margin-bottom: 16px;
 }
-.titulo-nota{
-    color: white;
+.titulo-nota h4{
+    color: white;    
+    text-shadow: 0px 0px 16px rgba(28, 37, 56, 0.8);
 }
 .destacado:hover{
-    border-image: linear-gradient(180deg, #5CC4EA, white, #CA82E0) 1;
+    border-image: linear-gradient(180deg, #353535, #353535, #353535) 1;
+    transform: translate(0px, -4px);
+}
+.destacado:hover h4{
+    text-decoration: underline;
 }
 .img-destacada{
     height: 412px;
@@ -192,6 +222,9 @@ nav ul li{
     flex-direction: column;
     justify-content: space-between;
 }
+#missuniverse{
+    background-image:url("kahanaafp.jpg");
+}
 .btn-noticia{
     background: linear-gradient(100deg, #4F6DB3 6%, #CA82E0 105%);
     color: fff;
@@ -203,10 +236,7 @@ nav ul li{
     font-weight: normal;
     font-size: 14px;
     line-height: 18px;
-
-    /* identical to box height */
     text-align: center;
-
     color: #FFFFFF;
 }
 .titulo-nota{
@@ -218,6 +248,7 @@ nav ul li{
     flex-direction: row;
     justify-content: flex-start;
     align-items: center;
+    margin-top: 8px;
 }
 .info-redactor p{
     margin: 0;
@@ -229,7 +260,7 @@ nav ul li{
 .info-name{
     margin-right: auto;
 }
-.info-date{
+.info-date p{
     color: #4F6DB3;
 }
 /* Tendencias */
@@ -241,19 +272,30 @@ nav ul li{
     padding: 16px;
 }
 /* Dropdown Button */
-.dropbtn {
+
+.btn-tendecias{
     background-color: white;
-    color: #4F5561;
-    font-size: 16px;
-    padding: 12px 16px;
-    border: none;
+    color: #353535;
+    border: 1px solid #CA82E0;
+    height: 100%;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    width: 100%;
-    border: 1px solid #CA82E0;
+}
+.adult-sponsor{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.dropbtn {
+    padding: 8px 24px;
+    border: none;
+    background: white;
     transition-duration: 500ms;
+}
+.arrow-dwn{
+    padding: 8px;
 }
 .dropdown {
     position: relative;
@@ -280,22 +322,19 @@ nav ul li{
 .dropdown:hover .dropdown-content {
     display: block;
 }
-.dropdown:hover .dropbtn {
-    background-color: #CA82E0;
-    color: white;
-}
 
-/* Noticias derecha */
+
+/* Noticias laterales */
 .noti-img{
     width: 100%;
     height: auto;
-    padding: 16px 0 8px 0;
+    padding: 8px 0;
 }
 .noti-bar p{
-    margin: 0;
-}
-.square-ad{
-    padding-top: 16px;
+    margin: 8px 0;
+} 
+.adultad{
+    width: 100%;
 }
 
 /* Segunda Seccion */
@@ -480,33 +519,60 @@ footer a{
         height: auto;
     }
     .upper{
-        flex-direction: column;
-        align-items: center;
+        justify-content: space-between;
+    }
+    .logo{
+        margin: auto 4px;
+    }
+    .logo-header{
+        height: 48px;
     }
     .user-btns{
-        width: 100%;
         background: #353535;
+    }
+    .hide{
+        display: none;
     }
     img{
         width: 100%;
     }
-    .logo{
-        margin: auto;
-    }
     nav{
-        display: none;
+        justify-content: flex-start;
+        align-items: flex-start;
+        overflow-x: scroll;
+    }
+    .nav-btn{
+        white-space: pre;
+        height: 64px;
+    }
+    .nav-btnend{
+        height: 64px;
     }
     .container{
         display: flex;
         flex-direction: column;
         padding: 4px 4px;
-        margin-top: 136px;
     }
     .anuncio-ppal{
-        display: none;
+        width: 100%;
+        height: auto;
+        margin: 152px auto 4px auto;
+    }
+    .gif-ppal{
+        width: 100%;
+        height: auto;
     }
     .tendencias{
+
+    }
+    .dropdown{
         display: none;
+    }
+    .noti-bar{
+        display: none;
+    }
+    .adultad{
+        width: 300px;
     }
     .mini-card img{
         width: 75px;

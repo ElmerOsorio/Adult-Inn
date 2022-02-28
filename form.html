@@ -12,6 +12,17 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-08E7QY62JV"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-08E7QY62JV');
+    </script>
+
   </head>
   <body>
     <div class="contenedor-ppal">
@@ -23,7 +34,7 @@
           <h2>Detalles de pago</h2>
           <p>Cancela cuando quieras</p>
         </div>
-        <form action="">
+        <form action="" method="post">
             <div class="metodo-pago">
               <button class="active-btn">Tarjeta de Crédito/Débito</button>
               <button>Paypal</button>
@@ -43,7 +54,7 @@
               </div>
               <div class="cvv">
                 <label for="cvv">CVV</label><br>
-                <input class="card-detail" type="text" id="cvv" name="cvv"><br>
+                <input class="card-detail" type="password" id="cvv" name="cvv"><br>
               </div>
             </div>
             <input type="submit" class="submit-btn" value="Suscribirme">
@@ -82,6 +93,14 @@
           </div>
       </div>
       </footer>
+
+
+      <!-- Java Script -->
+      <script>
+        function hola() {
+          alert("Qué onda")
+        }
+      </script>
     </div>
   </body>
 </html>
